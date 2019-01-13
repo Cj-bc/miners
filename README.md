@@ -17,30 +17,23 @@ This is a utility to control various kinds of miners
 
 # usage
 
-  - activate miner with profile:
 
-  ```
-  $ minerutl start koto -p miningLove
-  $ minerutl start koto on miningLove
-  ```
-
-  - stop miner
-
-  ```
-  $ minerutl stop koto -p miningLove
-  $ minerutl stop koto on miningLove
-  ```
-
-  - add address
-
-  ```
+  ```bash
+  # initialize configs
+  # 1. add miner
+  # 2. add addres
+  # 3. add profile
+  $ minerutl add miner koto "koto-minerd"
   $ minerutl add address koto "k1LR5z3PSHnm9mN9KmmHSfF1zc2GhsAZRKn"
-  ```
-
-  - make profile
-
-  ```
   $ minerutl add profile miningLove "-o stratum+tcp://koto.mining.love:3101 -u <koto/address>"
+
+  # start mining
+  $ minerutl start koto -p miningLove [-b]
+  # or
+  $ minerutl start koto at miningLove [on background]
+
+  # stop mining
+  $ minerutl stop koto -p miningLove
+  # or
+  $ minerutl stop koto at miningLove
   ```
-
-
