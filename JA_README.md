@@ -13,6 +13,12 @@ English: [README.md](README.md)
   - 複数のマイナーを同じコマンドで管理
   - プール毎、ポート毎にプロフィールを作成して素早く管理
 
+# 依存パッケージ
+
+  - [0k/shyaml](https://github.com/0k/shyaml)
+  - [Cj-bc/blib](https://github.com/Cj-bc/blib)
+
+
 # インストール方法
 
   - [ ] homebrew for macOS

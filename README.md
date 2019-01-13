@@ -13,6 +13,11 @@ This is a utility to control various kinds of miners
   - manage miners with one command
   - make profiles for each miner, each pool
 
+# dependency
+
+  - [0k/shyaml](https://github.com/0k/shyaml)
+  - [Cj-bc/blib](https://github.com/Cj-bc/blib)
+
 # installation
 
   - [ ] homebrew for macOS
