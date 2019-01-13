@@ -41,3 +41,19 @@ English: [README.md](README.md)
   # もしくは
   $ minerutl stop koto at miningLove
   ```
+
+# config file
+
+  コンフィグファイルはyaml形式で書かれています
+
+  - configpath: `~/.minerutl`
+
+  ```yaml
+  miners:
+    - koto: koto-minerd
+    - mona: mona-miner
+  address:
+    - &koto: k1LR5z3PSHnm9mN9KmmHSfF1zc2GhsAZRKn
+  profiles:
+    - miningLove: -o stratum+tcp://koto.mining.love:3101 -u *koto
+  `
