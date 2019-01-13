@@ -1,3 +1,7 @@
+日本語: [JA_README.md](JA_README.md)
+
+---
+
 # minerutl -- cryptcoin miners utility tool
 
 This is a utility to control various kinds of miners
