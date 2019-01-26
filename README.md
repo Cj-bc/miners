@@ -2,7 +2,7 @@
 
 ---
 
-# minerutl -- cryptcoin miners utility tool
+# miners -- cryptcoin miners utility tool
 
 This is a utility to control various kinds of miners
 
@@ -32,26 +32,26 @@ This is a utility to control various kinds of miners
   # 1. add miner
   # 2. add addres
   # 3. add profile
-  $ minerutl add miner koto "koto-minerd"
-  $ minerutl add address koto "k1LR5z3PSHnm9mN9KmmHSfF1zc2GhsAZRKn"
-  $ minerutl add profile miningLove "-o stratum+tcp://koto.mining.love:3101 -u <koto/address>"
+  $ miners add miner koto "koto-minerd"
+  $ miners add address koto "k1LR5z3PSHnm9mN9KmmHSfF1zc2GhsAZRKn"
+  $ miners add profile miningLove "-o stratum+tcp://koto.mining.love:3101 -u <koto/address>"
 
   # start mining
-  $ minerutl start koto -p miningLove [-b]
+  $ miners start koto -p miningLove [-b]
   # or
-  $ minerutl start koto at miningLove [on background]
+  $ miners start koto at miningLove [on background]
 
   # stop mining
-  $ minerutl stop koto -p miningLove
+  $ miners stop koto -p miningLove
   # or
-  $ minerutl stop koto at miningLove
+  $ miners stop koto at miningLove
   ```
 
 # config file
 
   config file is written in yaml
 
-  - configpath: `~/.minerutl`
+  - configpath: `~/.miners`
 
   ```yaml
   miners:

@@ -2,7 +2,7 @@ English: [README.md](README.md)
 
 ---
 
-# minerutl -- 仮想通貨マイナー用ユーティリティツール
+# miners -- 仮想通貨マイナー用ユーティリティツール
 
 仮想通貨マイナーを総合的に扱うユーティリティツールです
 
@@ -33,26 +33,26 @@ English: [README.md](README.md)
   # 1. マイナーの追加
   # 2. アドレスの追加
   # 3. プロフィールの追加
-  $ minerutl add miner koto "koto-minerd"
-  $ minerutl add address koto "k1LR5z3PSHnm9mN9KmmHSfF1zc2GhsAZRKn"
-  $ minerutl add profile miningLove "-o stratum+tcp://koto.mining.love:3101 -u <koto/address>"
+  $ miners add miner koto "koto-minerd"
+  $ miners add address koto "k1LR5z3PSHnm9mN9KmmHSfF1zc2GhsAZRKn"
+  $ miners add profile miningLove "-o stratum+tcp://koto.mining.love:3101 -u <koto/address>"
 
   # マイニングの開始
-  $ minerutl start koto -p miningLove [-b]
+  $ miners start koto -p miningLove [-b]
   # もしくは
-  $ minerutl start koto at miningLove [on background]
+  $ miners start koto at miningLove [on background]
 
   # マイニング停止
-  $ minerutl stop koto -p miningLove
+  $ miners stop koto -p miningLove
   # もしくは
-  $ minerutl stop koto at miningLove
+  $ miners stop koto at miningLove
   ```
 
 # config file
 
   コンフィグファイルはyaml形式で書かれています
 
-  - configpath: `~/.minerutl`
+  - configpath: `~/.miners`
 
   ```yaml
   miners:
